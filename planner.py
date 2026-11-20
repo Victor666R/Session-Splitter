@@ -9,5 +9,5 @@ def split_minutes(total_minutes: int, activity_count: int) -> list[int]:
         raise ValueError("Choose at least one minute and one activity.")
     if activity_count > total_minutes:
         raise ValueError("Give each activity at least one minute, or choose fewer activities.")
-    base, extra = divmod(total_minutes, activity_count)
+    base, extra = divmod((total_minutes-5), activity_count)
     return [base + (1 if index < extra else 0) for index in range(activity_count)]
