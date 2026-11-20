@@ -19,6 +19,6 @@ if submitted:
         st.warning(str(error))
     else:
         st.table({"Activity": list(range(1, len(blocks) + 1)), "Minutes": blocks})
-        st.success(f"Total planned: {sum(blocks)} minutes")
+        st.success(f"Total planned: {sum(blocks)} minutes, plus 5 minutes break")
 
-st.caption("Next experiment: reserve five minutes for a break. Predict the new results first.")
+#st.caption("Next experiment: reserve five minutes for a break. Predict the new results first.")
