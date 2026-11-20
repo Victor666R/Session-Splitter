@@ -1,3 +1,6 @@
+import streamlit as st
+from planner import split_minutes
+
 blocks = split_minutes(int(total_minutes), int(activity_count))
 
 # Label activities 1..N, and label the last item as "Break"
